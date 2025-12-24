@@ -1,0 +1,15 @@
+[theme]
+# Primary colors - medical/healthcare theme with calming blues and greens
+primaryColor = "#1E88E5"  # Bright blue for buttons and accents
+backgroundColor = "#F8F9FA"  # Light gray-white background
+secondaryBackgroundColor = "#E3F2FD"  # Light blue for sidebar and containers
+textColor = "#263238"  # Dark gray for text
+
+# Font
+font = "serif"
+
+# You can customize these colors:
+# primaryColor: Main accent color (buttons, sliders, links)
+# backgroundColor: Main app background
+# secondaryBackgroundColor: Sidebar, containers, code blocks
+# textColor: Main text color
