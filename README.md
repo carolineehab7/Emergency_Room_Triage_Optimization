@@ -72,7 +72,7 @@ $$
 
 •	The table is initialized with DP[0][t]=0 and DP[i][0]=0. The optimal solution is obtained from DP[n][T], and the selected patients are identified through backtracking.
 
-<img width="925" height="81" alt="image" src="https://github.com/user-attachments/assets/e5a447cb-e24e-4c2f-8e73-ceab6cb191d0" />
+<img width="925" height="81" alt="Screenshot 2025-12-24 121712" src="https://github.com/user-attachments/assets/dda543b5-39d2-4daa-939f-4bfbe30ed236" />
 
 ------------------------------------------------------------------------
 
@@ -91,7 +91,7 @@ $$
 
 •	The table is initialized with DP[0][b]=0 and DP[i][0]=0. The optimal solution is obtained from DP[n][B]. The selected patients are identified through backtracking, where a change in DP value indicates that a patient was assigned a bed.
 
-<img width="868" height="79" alt="image" src="https://github.com/user-attachments/assets/db53584a-360a-4912-9def-5d8190c501b4" />
+<img width="868" height="79" alt="Screenshot 2025-12-24 122601" src="https://github.com/user-attachments/assets/2b1f5eb0-4f70-4844-a980-526d28286203" />
 
 
 ### Complexity Analysis
