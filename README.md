@@ -57,7 +57,7 @@ Dynamic Programming provides a robust alternative by exploiting the problem’s 
 
 ### Dynamic Programming Formulation
 
-**Time-Based Knapsack:**
+**Time-Based:**
 
 State: Let $DP[i][t]$ denote the maximum total severity achievable by considering the first i patients within t available time units
 
@@ -72,11 +72,16 @@ $$
 
 •	The table is initialized with DP[0][t]=0 and DP[i][0]=0. The optimal solution is obtained from DP[n][T], and the selected patients are identified through backtracking.
 
-<img width="925" height="81" alt="Screenshot 2025-12-24 121712" src="https://github.com/user-attachments/assets/dda543b5-39d2-4daa-939f-4bfbe30ed236" />
+$$
+DP[i][t] = \ \begin{cases}
+max(DP[i-1][t], DP[i-1][t-tᵢ] + sᵢ) & \text{(t ≥ tᵢ } \text{)} \\
+DP[i-1][t] & \text{(t < tᵢ} \text{)}
+\end{cases}
+$$
 
 ------------------------------------------------------------------------
 
-**Bed-Based Knapsack:**
+**Bed-Based:**
 
 State: Let $DP[i][b]$ denote the maximum total severity achievable by considering the first i patients using at most b available beds.
 
@@ -91,8 +96,12 @@ $$
 
 •	The table is initialized with DP[0][b]=0 and DP[i][0]=0. The optimal solution is obtained from DP[n][B]. The selected patients are identified through backtracking, where a change in DP value indicates that a patient was assigned a bed.
 
-<img width="868" height="79" alt="Screenshot 2025-12-24 122601" src="https://github.com/user-attachments/assets/2b1f5eb0-4f70-4844-a980-526d28286203" />
-
+$$
+DP[i][b] = \ \begin{cases}
+max(DP[i-1][b], DP[i-1][b-1] + sᵢ) & \text{(b ≥ 1 } \text{)} \\
+DP[i-1][b] & \text{(b = 0} \text{)}
+\end{cases}
+$$
 
 ### Complexity Analysis
 
