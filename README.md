@@ -1,4 +1,4 @@
-# Emergency_Room_Triage_Optimizatio
+# Emergency_Room_Triage_Optimization
 
 ## Project Overview
 
